@@ -15,7 +15,7 @@ class Theme_example extends CI_Controller {
 		//try to get the theme from the cookie
 		$theme = get_cookie('theme');
 
-		$this->theme->set_theme('skeleton');
+		$this->theme->set_theme('default');
 
 		if (in_array($theme, array('default', 'skeleton')))
 		{
