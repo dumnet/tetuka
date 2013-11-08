@@ -111,6 +111,12 @@ $autoload['language'] = array();
 
 $autoload['model'] = array();
 
+# added by ones006
+# Load the theme config
+$autoload['config'] = array('theme');
+
+# Load the theme spark
+$autoload['libraries'] = array('theme');
 
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */
