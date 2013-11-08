@@ -45,25 +45,83 @@
 | the active record class
 */
 
+$dbs = array();
+
+/*
+|--------------------------------------------------------------------------
+| Multiple User Database Configuration
+|--------------------------------------------------------------------------
+|
+| Each configuration separate by email (see: server admin)
+|
+*/
+
+switch ($_SERVER["SERVER_ADMIN"]) 
+{
+	case "roso@github.local":
+		
+		$dbs["default"]["hostname"] = "localhost";
+		$dbs["default"]["username"] = "root";
+		$dbs["default"]["password"] = "root";
+		$dbs["default"]["database"] = "jatayu";
+		$dbs["default"]["dbdriver"] = "mysql";
+
+		break;
+
+	case "iwan@tetuka.local":
+		
+		$dbs["default"]["hostname"] = "localhost";
+		$dbs["default"]["username"] = "root";
+		$dbs["default"]["password"] = "admin";
+		$dbs["default"]["database"] = "jatayu";
+		$dbs["default"]["dbdriver"] = "mysql";
+
+		break;
+	
+	default:
+		
+		$dbs["default"]["hostname"] = "localhost";
+		$dbs["default"]["username"] = "root";
+		$dbs["default"]["password"] = "root";
+		$dbs["default"]["database"] = "jatayu";
+		$dbs["default"]["dbdriver"] = "mysql";
+
+		break;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Build Database Configuration
+|--------------------------------------------------------------------------
+|
+| Loop through database configurations 
+|
+*/
+
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
-$db['default']['dbdriver'] = 'mysql';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
-
+if (count($dbs) > 0)
+{
+	foreach($dbs as $group => $config)
+	{
+		$db[$group]["hostname"] = $config["hostname"];
+		$db[$group]["username"] = $config["username"];
+		$db[$group]["password"] = $config["password"];
+		$db[$group]["database"] = $config["database"];
+		$db[$group]["dbdriver"] = $config["dbdriver"];
+		$db[$group]["dbprefix"] = "";
+		$db[$group]["pconnect"] = TRUE;
+		$db[$group]["db_debug"] = TRUE;
+		$db[$group]["cache_on"] = FALSE;
+		$db[$group]["cachedir"] = "";
+		$db[$group]["char_set"] = "utf8";
+		$db[$group]["dbcollat"] = "utf8_general_ci";
+		$db[$group]["swap_pre"] = "";
+		$db[$group]["autoinit"] = TRUE;
+		$db[$group]["stricton"] = FALSE;
+	}
+}
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */
