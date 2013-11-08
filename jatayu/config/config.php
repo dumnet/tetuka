@@ -224,7 +224,11 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
+<<<<<<< HEAD
 $config['encryption_key'] = 'jatayu-1.0.0';
+=======
+$config['encryption_key'] = 'tetuka8nov2013';
+>>>>>>> 3a00c9725c9716f573a4b71ebf3d2744efb21ed6
 
 /*
 |--------------------------------------------------------------------------
