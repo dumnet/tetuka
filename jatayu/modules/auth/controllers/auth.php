@@ -11,6 +11,8 @@ class Auth extends CI_Controller
 	{
 		parent::__construct();
 
+		
+
 		$this->load->library('bitauth');
 
 		$this->load->helper('form');
