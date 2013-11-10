@@ -8,7 +8,7 @@
 		<meta name="author" content="">
 		<link rel="shortcut icon" href="assets/ico/favicon.png">
 
-		<title>Navbar Template for Bootstrap</title>
+		<title><?php echo $this->get('page_title', 'Tetuka Theme default title');?></title>
 
 		<!-- Bootstrap core CSS -->
 		<link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -123,159 +123,15 @@
 				<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 				<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 			</div><!-- /.carousel -->
-
+			
+			<!-- contents -->
 			<div class="row">
+				<?php bootstrap_messages( $this->messages(FALSE) ); ?>
 				<!-- product -->
 				<div class="col-xs-18 col-sm-9">
-					<h3>Hot Products</h3>
-					<div class="mainContent">
-						<ul class="thumbnails">
-							<li class="col-sm-3">
-								<div class="">
-									<img data-src="holder.js/180x220" class="img-thumbnail" alt="a products">
-									<div class="caption">
-										<a href="#"><h5>Product Name</h5></a>
-										<p>
-											<a class="btn btn-default btn-xs" rel="ajax/7.html" href="#">
-												<i class="glyphicon glyphicon-zoom-in"></i>
-											</a>
-											<a class="btn btn-default btn-xs" rel="7" href="#">
-												Add to
-												<i class="glyphicon glyphicon-shopping-cart"></i>
-											</a>
-											<span class="label label-info price">$ 9.99</span>
-										</p>
-									</div>
-								</div>
-							</li>
-							<li class="col-sm-3">
-								<div class="">
-									<img data-src="holder.js/180x220" class="img-thumbnail" alt="a products">
-									<div class="caption">
-										<a href="#"><h5>Product Name</h5></a>
-										<p>
-											<a class="btn btn-default btn-xs" rel="ajax/7.html" href="#">
-												<i class="glyphicon glyphicon-zoom-in"></i>
-											</a>
-											<a class="btn btn-default btn-xs" rel="7" href="#">
-												Add to
-												<i class="glyphicon glyphicon-shopping-cart"></i>
-											</a>
-											<span class="label label-info price">$ 9.99</span>
-										</p>
-									</div>
-								</div>
-							</li>
-							<li class="col-sm-3">
-								<div class="">
-									<img data-src="holder.js/180x220" class="img-thumbnail" alt="a products">
-									<div class="caption">
-										<a href="#"><h5>Product Name</h5></a>
-										<p>
-											<a class="btn btn-default btn-xs" rel="ajax/7.html" href="#">
-												<i class="glyphicon glyphicon-zoom-in"></i>
-											</a>
-											<a class="btn btn-default btn-xs" rel="7" href="#">
-												Add to
-												<i class="glyphicon glyphicon-shopping-cart"></i>
-											</a>
-											<span class="label label-info price">$ 9.99</span>
-										</p>
-									</div>
-								</div>
-							</li>
-							<li class="col-sm-3">
-								<div class="">
-									<img data-src="holder.js/180x220" class="img-thumbnail" alt="a products">
-									<div class="caption">
-										<a href="#"><h5>Product Name</h5></a>
-										<p>
-											<a class="btn btn-default btn-xs" rel="ajax/7.html" href="#">
-												<i class="glyphicon glyphicon-zoom-in"></i>
-											</a>
-											<a class="btn btn-default btn-xs" rel="7" href="#">
-												Add to
-												<i class="glyphicon glyphicon-shopping-cart"></i>
-											</a>
-											<span class="label label-info price">$ 9.99</span>
-										</p>
-									</div>
-								</div>
-							</li>
-							<li class="col-sm-3">
-								<div class="">
-									<img data-src="holder.js/180x220" class="img-thumbnail" alt="a products">
-									<div class="caption">
-										<a href="#"><h5>Product Name</h5></a>
-										<p>
-											<a class="btn btn-default btn-xs" rel="ajax/7.html" href="#">
-												<i class="glyphicon glyphicon-zoom-in"></i>
-											</a>
-											<a class="btn btn-default btn-xs" rel="7" href="#">
-												Add to
-												<i class="glyphicon glyphicon-shopping-cart"></i>
-											</a>
-											<span class="label label-info price">$ 9.99</span>
-										</p>
-									</div>
-								</div>
-							</li>
-							<li class="col-sm-3">
-								<div class="">
-									<img data-src="holder.js/180x220" class="img-thumbnail" alt="a products">
-									<div class="caption">
-										<a href="#"><h5>Product Name</h5></a>
-										<p>
-											<a class="btn btn-default btn-xs" rel="ajax/7.html" href="#">
-												<i class="glyphicon glyphicon-zoom-in"></i>
-											</a>
-											<a class="btn btn-default btn-xs" rel="7" href="#">
-												Add to
-												<i class="glyphicon glyphicon-shopping-cart"></i>
-											</a>
-											<span class="label label-info price">$ 9.99</span>
-										</p>
-									</div>
-								</div>
-							</li>
-							<li class="col-sm-3">
-								<div class="">
-									<img data-src="holder.js/180x220" class="img-thumbnail" alt="a products">
-									<div class="caption">
-										<a href="#"><h5>Product Name</h5></a>
-										<p>
-											<a class="btn btn-default btn-xs" rel="ajax/7.html" href="#">
-												<i class="glyphicon glyphicon-zoom-in"></i>
-											</a>
-											<a class="btn btn-default btn-xs" rel="7" href="#">
-												Add to
-												<i class="glyphicon glyphicon-shopping-cart"></i>
-											</a>
-											<span class="label label-info price">$ 9.99</span>
-										</p>
-									</div>
-								</div>
-							</li>
-							<li class="col-sm-3">
-								<div class="">
-									<img data-src="holder.js/180x220" class="img-thumbnail" alt="a products">
-									<div class="caption">
-										<a href="#"><h5>Product Name</h5></a>
-										<p>
-											<a class="btn btn-default btn-xs" rel="ajax/7.html" href="#">
-												<i class="glyphicon glyphicon-zoom-in"></i>
-											</a>
-											<a class="btn btn-default btn-xs" rel="7" href="#">
-												Add to
-												<i class="glyphicon glyphicon-shopping-cart"></i>
-											</a>
-											<span class="label label-info price">$ 9.99</span>
-										</p>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
+					<?php echo $this->content(); ?>
+					
+					
 					<!-- Pagination -->
 					<!-- <ul class="pagination">
 						<li><a href="#">&laquo;</a></li>
