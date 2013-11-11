@@ -30,9 +30,7 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-6"><h1>Tetuka Cart</h1></div>
-				<!-- <div class="col-xs-6 col-sm-3"></div> -->
-
+				<div class="col-xs-12 col-sm-6"><h1>Tetuka Shopping Cart</h1></div>
 				<!-- Add the extra clearfix for only the required viewport -->
 				<div class="clearfix visible-xs"></div>
 
@@ -129,11 +127,7 @@
 				<?php bootstrap_messages( $this->messages(FALSE) ); ?>
 				<!-- product -->
 				<div class="col-xs-18 col-sm-9">
-					<?php echo $this->content(); ?>
-					
-					
-					<!-- Pagination -->
-					<!--  -->
+					<?php echo $this->content(); ?>										
 				</div>
 				<!-- Add the extra clearfix for only the required viewport -->
 				<div class="clearfix visible-xs"></div>
@@ -163,7 +157,7 @@
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script src=".assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
 		<script src="assets/js/holder.js"></script>
 	</body>
 </html>
