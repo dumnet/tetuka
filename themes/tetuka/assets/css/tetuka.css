@@ -7,6 +7,16 @@ body {
   margin-bottom: 20px;
 }
 
+.logo-company{
+  margin-top: -16px;
+}
+
+.small-menu{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top:60px;
+  right: -14px
+}
 
 /* Carousel base class */
 .carousel {
@@ -30,12 +40,18 @@ body {
   min-width: 100%;
   height: 250px;
 }
-
+  .feature-header {
+    background: none repeat scroll 0 0 #A7D8FF;
+    padding:5px;
+    color: #6A6969;
+  }
 /*
  * Off Canvas
  * --------------------------------------------------
  */
 @media screen and (max-width: 767px) {
+
+
   .row-offcanvas {
 	position: relative;
 	-webkit-transition: all 0.25s ease-out;

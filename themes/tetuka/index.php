@@ -30,12 +30,38 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-6"><h1>Tetuka Shopping Cart</h1></div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="logo-company">
+						<h1>Tetuka Shopping Cart</h1>
+					</div>
+				</div>
 				<!-- Add the extra clearfix for only the required viewport -->
 				<div class="clearfix visible-xs"></div>
 
-				<div class="col-xs-6 col-sm-3">Shopping Cart<br>2(items)-Rp.559000</div>
-				<div class="col-xs-6 col-sm-3">Free Delivery<br>Jabotabek</div>
+				<div class="col-xs-6 col-sm-3">
+					<div class="feature-header">
+						Shopping Cart<br>2(items)-Rp.559000
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<div class="feature-header">
+						Free Delivery On All Order<br/>
+						<small>Customer service: 0856 7167 648</small>
+					</div>
+				</div>
+				<div class="row col-xs-12 small-menu">
+					<div class="links pull-right">
+					<a href="index.html">Home</a>
+					|
+					<a href="my_account.html">My Account</a>
+					|
+					<a href="cart.html">Shopping Cart</a>
+					|
+					<a href="two-column.html">About</a>
+					|
+					<a href="contact.html">Contact</a>
+					</div>
+				</div>
 			</div>
 			<!-- Static navbar -->
 			<div class="navbar navbar-default" role="navigation">
@@ -70,8 +96,7 @@
 						<form class="navbar-form navbar-right">
 							<div class="form-group">
 								<input type="keyword" placeholder="Search..." class="form-control">
-							</div>
-							<button type="submit" class="btn btn-success">Go</button>
+							</div><button type="submit" class="btn btn-success">Go</button>
 						</form>
 					</ul>
 				</div><!--/.nav-collapse -->
@@ -159,5 +184,6 @@
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script src="assets/js/holder.js"></script>
+		<script src="assets/js/tetuka.js"></script>
 	</body>
 </html>
