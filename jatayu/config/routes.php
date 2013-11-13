@@ -38,9 +38,7 @@
 |
 */
 
-$URI = array_pad(explode('/', $_SERVER['REQUEST_URI']), 2, NULL);
-
-if ($URI[1] == config_item('admin_uri'))
+if (preg_match('/' . config_item('admin_uri') . '/', $_SERVER['REQUEST_URI']))
 	$route['default_controller'] = 'auth';
 else
 	$route['default_controller'] = "home";

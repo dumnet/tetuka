@@ -4,10 +4,9 @@
  *
  */
 
-$URI = array_pad(explode('/', $_SERVER['REQUEST_URI']), 2, NULL);
 $DS  = DIRECTORY_SEPARATOR;
 
-if ($URI[1] == config_item('admin_uri'))
+if (preg_match('/' . config_item('admin_uri') . '/', $_SERVER['REQUEST_URI']))
 {
 	//This is the physical path to the themes (Thanks Marcus Reinhardt & Kristories, for the Mac and Linux fix)
 	$config['theme']['path'] = str_replace(config_item('admin_uri') . $DS, '', FCPATH) . '/themes/';

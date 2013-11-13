@@ -201,7 +201,7 @@ if (defined('ENVIRONMENT'))
  */
 
 $assign_to_config['modules_locations'] = array(APPPATH . 'modules_front/' => '../modules_front/');
-$assign_to_config['admin_uri'] = basename(__DIR__);
+$assign_to_config['admin_uri'] = 'admin';
 
 /*
  * --------------------------------------------------------------------
