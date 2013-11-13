@@ -358,6 +358,19 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
+/*
+|--------------------------------------------------------------------------
+| Module definitions
+|--------------------------------------------------------------------------
+|
+| Required description here
+|
+*/
+
+/*$config["modules_locations"] = array(
+	"/" => array(APPPATH . "modules/front/"	=> "../modules/front/"),
+	"admin/" => array(APPPATH . "modules/admin/"	=> "../modules/admin/")
+);*/
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */

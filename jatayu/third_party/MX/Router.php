@@ -46,7 +46,7 @@ class MX_Router extends CI_Router
 	public function _validate_request($segments) {
 
 		if (count($segments) == 0) return $segments;
-		
+
 		/* locate module controller */
 		if ($located = $this->locate($segments)) return $located;
 		
@@ -68,16 +68,16 @@ class MX_Router extends CI_Router
 		$ext = $this->config->item('controller_suffix').EXT;
 		
 		/* use module route if available */
-		if (isset($segments[0]) AND $routes = Modules::parse_routes($segments[0], implode('/', $segments))) {
+		if (isset($segments[1]) AND $routes = Modules::parse_routes($segments[1], implode('/', $segments))) {
 			$segments = $routes;
 		}
-	
+		
 		/* get the segments array elements */
 		list($module, $directory, $controller) = array_pad($segments, 3, NULL);
 
 		/* check modules */
 		foreach (Modules::$locations as $location => $offset) {
-		
+			
 			/* module exists? */
 			if (is_dir($source = $location.$module.'/controllers/')) {
 				
