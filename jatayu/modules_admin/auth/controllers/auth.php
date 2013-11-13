@@ -94,8 +94,7 @@ class Auth extends CI_Controller
 				$data['error'] = validation_errors();
 			}
 		}
-
-		//$this->load->view('auth/login', $data);
+		
 		$this->theme->set_layout('login');
 		
 		$this->theme->view('auth/login', $data);
@@ -113,7 +112,7 @@ class Auth extends CI_Controller
 			redirect('auth/login');
 		}
 		
-		$this->load->view('auth/users', array('bitauth' => $this->bitauth, 'users' => $this->bitauth->get_users()));
+		$this->theme->view('auth/users', array('bitauth' => $this->bitauth, 'users' => $this->bitauth->get_users()));
 		
 		/*$this->theme->set_layout('login');
 		
@@ -143,7 +142,7 @@ class Auth extends CI_Controller
 
 		}
 
-		$this->load->view('auth/add_user', array('title' => 'Register'));
+		$this->theme->view('auth/add_user', array('title' => 'Register'));
 	}
 
 	/**
@@ -160,7 +159,7 @@ class Auth extends CI_Controller
 
 		if ( ! $this->bitauth->has_role('admin'))
 		{
-			$this->load->view('auth/no_access');
+			$this->theme->view('auth/no_access');
 			return;
 		}
 
@@ -181,7 +180,7 @@ class Auth extends CI_Controller
 
 		}
 
-		$this->load->view('auth/add_user', array('title' => 'Add User', 'bitauth' => $this->bitauth));
+		$this->theme->view('auth/add_user', array('title' => 'Add User', 'bitauth' => $this->bitauth));
 	}
 
 
@@ -199,7 +198,7 @@ class Auth extends CI_Controller
 
 		if ( ! $this->bitauth->has_role('admin'))
 		{
-			$this->load->view('auth/no_access');
+			$this->theme->view('auth/no_access');
 			return;
 		}
 
@@ -235,7 +234,7 @@ class Auth extends CI_Controller
 		}
 
 
-		$this->load->view('auth/edit_user', array('bitauth' => $this->bitauth, 'groups' => $groups, 'user' => $this->bitauth->get_user_by_id($user_id)));
+		$this->theme->view('auth/edit_user', array('bitauth' => $this->bitauth, 'groups' => $groups, 'user' => $this->bitauth->get_user_by_id($user_id)));
 	}
 
 	/**
@@ -250,7 +249,7 @@ class Auth extends CI_Controller
 			redirect('auth/login');
 		}
 
-		$this->load->view('auth/groups', array('bitauth' => $this->bitauth, 'groups' => $this->bitauth->get_groups()));
+		$this->theme->view('auth/groups', array('bitauth' => $this->bitauth, 'groups' => $this->bitauth->get_groups()));
 	}
 
 	/**
@@ -267,7 +266,7 @@ class Auth extends CI_Controller
 
 		if ( ! $this->bitauth->has_role('admin'))
 		{
-			$this->load->view('auth/no_access');
+			$this->theme->view('auth/no_access');
 			return;
 		}
 
@@ -293,7 +292,7 @@ class Auth extends CI_Controller
 			$users[$_user->user_id] = $_user->fullname;
 		}
 
-		$this->load->view('auth/add_group', array('bitauth' => $this->bitauth, 'roles' => $this->bitauth->get_roles(), 'users' => $users));
+		$this->theme->view('auth/add_group', array('bitauth' => $this->bitauth, 'roles' => $this->bitauth->get_roles(), 'users' => $users));
 	}
 
 	/**
@@ -310,7 +309,7 @@ class Auth extends CI_Controller
 
 		if ( ! $this->bitauth->has_role('admin'))
 		{
-			$this->load->view('auth/no_access');
+			$this->theme->view('auth/no_access');
 			return;
 		}
 
@@ -348,7 +347,7 @@ class Auth extends CI_Controller
 			}
 		}
 
-		$this->load->view('auth/edit_group', array('bitauth' => $this->bitauth, 'roles' => $roles, 'group' => $group, 'group_roles' => $role_list, 'users' => $users));
+		$this->theme->view('auth/edit_group', array('bitauth' => $this->bitauth, 'roles' => $roles, 'group' => $group, 'group_roles' => $role_list, 'users' => $users));
 	}
 
 	/**
@@ -359,11 +358,11 @@ class Auth extends CI_Controller
 	 {
 	 	if($this->bitauth->activate($activation_code))
 	 	{
-	 		$this->load->view('auth/activation_successful');
+	 		$this->theme->view('auth/activation_successful');
 	 		return;
 	 	}
 
-	 	$this->load->view('auth/activation_failed');
+	 	$this->theme->view('auth/activation_failed');
 	 }
 
 	/**
