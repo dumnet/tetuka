@@ -38,7 +38,13 @@
 |
 */
 
-$route['default_controller'] = "home";
+$URI = array_pad(explode('/', $_SERVER['REQUEST_URI']), 2, NULL);
+
+if ($URI[1] == config_item('admin_uri'))
+	$route['default_controller'] = 'auth';
+else
+	$route['default_controller'] = "home";
+
 $route['404_override'] = '';
 
 /* End of file routes.php */

@@ -56,7 +56,7 @@ if (defined('ENVIRONMENT'))
  * as this file.
  *
  */
-	$system_path = 'system';
+	$system_path = '../system';
 
 /*
  *---------------------------------------------------------------
@@ -72,7 +72,7 @@ if (defined('ENVIRONMENT'))
  * NO TRAILING SLASH!
  *
  */
-	$application_folder = 'jatayu';
+	$application_folder = '../jatayu';
 
 /*
  * --------------------------------------------------------------------
@@ -200,7 +200,7 @@ if (defined('ENVIRONMENT'))
  *
  */
 
-$assign_to_config['modules_locations'] = array(APPPATH . 'modules_front/' => '../modules_front/');
+$assign_to_config['modules_locations'] = array(APPPATH . 'modules_admin/' => '../modules_admin/');
 $assign_to_config['admin_uri'] = basename(__DIR__);
 
 /*
