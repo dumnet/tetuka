@@ -94,7 +94,7 @@ class Auth extends CI_Controller
 				$data['error'] = validation_errors();
 			}
 		}
-		
+
 		$this->theme->set_layout('login');
 		
 		$this->theme->view('auth/login', $data);
@@ -114,9 +114,6 @@ class Auth extends CI_Controller
 		
 		$this->theme->view('auth/users', array('bitauth' => $this->bitauth, 'users' => $this->bitauth->get_users()));
 		
-		/*$this->theme->set_layout('login');
-		
-		$this->theme->view('test_view');*/
 	}
 
 	/**
