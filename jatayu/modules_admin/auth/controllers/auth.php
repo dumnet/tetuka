@@ -95,7 +95,10 @@ class Auth extends CI_Controller
 			}
 		}
 
-		$this->load->view('auth/login', $data);
+		//$this->load->view('auth/login', $data);
+		$this->theme->set_layout('login');
+		
+		$this->theme->view('auth/login', $data);
 	}
 
 	/**
@@ -104,17 +107,17 @@ class Auth extends CI_Controller
 	 */
 	public function index()
 	{
-		/*if( ! $this->bitauth->logged_in())
+		if( ! $this->bitauth->logged_in())
 		{
 			$this->session->set_userdata('redir', current_url());
 			redirect('auth/login');
 		}
 		
-		$this->load->view('auth/users', array('bitauth' => $this->bitauth, 'users' => $this->bitauth->get_users()));*/
+		$this->load->view('auth/users', array('bitauth' => $this->bitauth, 'users' => $this->bitauth->get_users()));
 		
-		$this->theme->set_layout('login');
+		/*$this->theme->set_layout('login');
 		
-		$this->theme->view('test_view');
+		$this->theme->view('test_view');*/
 	}
 
 	/**
