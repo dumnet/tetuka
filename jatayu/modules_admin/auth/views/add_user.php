@@ -21,11 +21,11 @@
 		echo '<div id="bottom">';
 		if(isset($bitauth) && $bitauth->logged_in())
 		{
-			echo anchor('example/logout', 'Logout', 'style="float: right;"');
+			echo anchor('auth/logout', 'Logout', 'style="float: right;"');
 		}
 		else
 		{
-			echo anchor('example/login', 'Login', 'style="float: right;"');
+			echo anchor('auth/login', 'Login', 'style="float: right;"');
 		}
 		echo '</div>';
 

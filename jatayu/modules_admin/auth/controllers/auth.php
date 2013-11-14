@@ -82,7 +82,7 @@ class Auth extends CI_Controller
 						$this->session->unset_userdata('redir');
 					}
 
-					redirect($redir ? $redir : 'example');
+					redirect($redir ? $redir : 'auth');
 				}
 				else
 				{
@@ -111,7 +111,7 @@ class Auth extends CI_Controller
 			$this->session->set_userdata('redir', current_url());
 			redirect('auth/login');
 		}
-		
+		$this->theme->set('bitauth',$this->bitauth);
 		$this->theme->view('auth/users', array('bitauth' => $this->bitauth, 'users' => $this->bitauth->get_users()));
 		
 	}
@@ -177,6 +177,7 @@ class Auth extends CI_Controller
 
 		}
 
+		$this->theme->set('bitauth',$this->bitauth);
 		$this->theme->view('auth/add_user', array('title' => 'Add User', 'bitauth' => $this->bitauth));
 	}
 
@@ -230,7 +231,7 @@ class Auth extends CI_Controller
 			$groups[$_group->group_id] = $_group->name;
 		}
 
-
+		$this->theme->set('bitauth',$this->bitauth);
 		$this->theme->view('auth/edit_user', array('bitauth' => $this->bitauth, 'groups' => $groups, 'user' => $this->bitauth->get_user_by_id($user_id)));
 	}
 
@@ -246,6 +247,7 @@ class Auth extends CI_Controller
 			redirect('auth/login');
 		}
 
+		$this->theme->set('bitauth',$this->bitauth);
 		$this->theme->view('auth/groups', array('bitauth' => $this->bitauth, 'groups' => $this->bitauth->get_groups()));
 	}
 
@@ -289,6 +291,7 @@ class Auth extends CI_Controller
 			$users[$_user->user_id] = $_user->fullname;
 		}
 
+		$this->theme->set('bitauth',$this->bitauth);
 		$this->theme->view('auth/add_group', array('bitauth' => $this->bitauth, 'roles' => $this->bitauth->get_roles(), 'users' => $users));
 	}
 
@@ -344,6 +347,7 @@ class Auth extends CI_Controller
 			}
 		}
 
+		$this->theme->set('bitauth',$this->bitauth);
 		$this->theme->view('auth/edit_group', array('bitauth' => $this->bitauth, 'roles' => $roles, 'group' => $group, 'group_roles' => $role_list, 'users' => $users));
 	}
 

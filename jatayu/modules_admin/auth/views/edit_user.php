@@ -25,16 +25,16 @@
 				echo '<tr><td colspan="2">'.validation_errors().'</td></tr>';
 			}
 
-			echo '<tr><td class="label" colspan="2">'.anchor('example', 'Cancel').' '.form_submit('submit','Update').'</td></tr>';
+			echo '<tr><td class="label" colspan="2">'.anchor('auth', 'Cancel').' '.form_submit('submit','Update').'</td></tr>';
 		} else {
-			echo '<tr><td><p>User Not Found</p><p>'.anchor('example', 'Go Back').'</p></td></tr>';
+			echo '<tr><td><p>User Not Found</p><p>'.anchor('auth', 'Go Back').'</p></td></tr>';
 		}
 
 		echo '</table>';
 		echo form_close();
 
 		echo '<div id="bottom">';
-		echo anchor('example/logout', 'Logout', 'style="float: right;"');
+		echo anchor('auth/logout', 'Logout', 'style="float: right;"');
 		echo '</div>';
 
 	?>

@@ -15,7 +15,7 @@ if (preg_match('/' . config_item('admin_uri') . '/', $_SERVER['REQUEST_URI']))
 	$config['theme']['url'] = str_replace(config_item('admin_uri'), '', trim(config_item('base_url'), '/ ')) . '/themes/';
 
 	//This is the default theme (subfolder in the themes folder)
-	$config['theme']['theme'] = 'default';
+	$config['theme']['theme'] = 'sb-admin';
 
 	//This is the default layout (index: a mapping to index.php)
 	$config['theme']['layout'] = 'index';	
@@ -30,7 +30,7 @@ else
 	$config['theme']['url'] = trim(config_item('base_url'), '/ ') . '/themes/';
 
 	//This is the default theme (subfolder in the themes folder)
-	$config['theme']['theme'] = 'default';
+	$config['theme']['theme'] = 'tetuka';
 
 	//This is the default layout (index: a mapping to index.php)
 	$config['theme']['layout'] = 'index';	
