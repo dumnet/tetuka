@@ -119,11 +119,11 @@ $config['mins_locked_out'] = 10;
  * Tables used by BitAuth
  */
 $config['table'] = array(
-	'users'		=> 'bitauth_users',		// Required user information (username, password, etc)
-	'data'		=> 'bitauth_userdata',	// Optional user information (profile)
-	'groups'	=> 'bitauth_groups',	// Groups
-	'assoc'		=> 'bitauth_assoc',		// Users -> Groups associations
-	'logins'	=> 'bitauth_logins'		// Record of all logins
+	'users'		=> 'app_users',		// Required user information (username, password, etc)
+	'data'		=> 'app_userdata',	// Optional user information (profile)
+	'groups'	=> 'app_groups',	// Groups
+	'assoc'		=> 'app_assoc',		// Users -> Groups associations
+	'logins'	=> 'app_logins'		// Record of all logins
 );
 
 /**

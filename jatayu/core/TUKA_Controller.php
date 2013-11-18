@@ -1,4 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed!');
+<?php if ( ! defined("BASEPATH")) exit("No direct script access allowed!");
 
 class TUKA_Controller extends CI_Controller {
 
@@ -7,15 +7,15 @@ class TUKA_Controller extends CI_Controller {
 		parent::__construct();
 
 		// load helper requirements
-		$this->load->helper(array('uri', 'cookie'));
+		$this->load->helper(array("uri", "cookie"));
 
 		// apply theme
-		$theme = get_cookie('theme');
+		$theme = get_cookie("theme");
 		
-		if (in_array($theme, array('tetuka', 'default')))
+		if (in_array($theme, array("tetuka", "default")))
 			$this->theme->set_theme($theme);
 		else
-			$this->theme->set_theme('tetuka');
+			$this->theme->set_theme("tetuka");
 		
 	}
 
