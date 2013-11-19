@@ -47,7 +47,9 @@ class Theme
                                             $this->config('path') . $this->config('theme') . '/views/',
                                             $this->config('path') . 'default/views/modules/' . $this->_module .'/',
                                             $this->config('path') . 'default/views/',
-                                            APPPATH . 'modules/' . $this->_module . '/views/'
+                                            APPPATH . 'modules/' . $this->_module . '/views/',
+                                            APPPATH . 'modules_admin/' . $this->_module . '/assets/',
+                                            APPPATH . 'modules_front/' . $this->_module . '/assets/'
                                      );
 
 
@@ -76,7 +78,9 @@ class Theme
                                             $this->config('path') . $this->config('theme') . '/views/',
                                             $this->config('path') . 'default/views/modules/' . $this->_module .'/',
                                             $this->config('path') . 'default/views/',
-                                            APPPATH . 'modules/' . $this->_module . '/views/'
+                                            APPPATH . 'modules/' . $this->_module . '/views/',
+                                            APPPATH . 'modules_admin/' . $this->_module . '/assets/',
+                                            APPPATH . 'modules_front/' . $this->_module . '/assets/'
                                      );
     }
 

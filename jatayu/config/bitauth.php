@@ -165,6 +165,10 @@ $config['roles'] = array(
  * ANY USERS IN GROUPS GIVEN THIS ROLE WILL HAVE FULL ACCESS
  */
 	'admin'			=> 'User is an Administrator',
+	'allow_access'	=> 'User has access privilege to spesific module',
+	'allow_insert'	=> 'User has insert privilege to database',
+	'allow_update'	=> 'User has update privilege to database',
+	'allow_delete'	=> 'User has delete privilege to database'
 /**
  * Add as many roles here as you like.
  * Follow the format:

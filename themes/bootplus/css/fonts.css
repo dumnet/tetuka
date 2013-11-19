@@ -4,7 +4,7 @@
 	font-weight: 300;
 	src: local('Roboto Light'), 
 		 local('Roboto-Light'), 
-		 url('fonts/Roboto-Light.woff') format('woff');
+		 url('../font/Roboto-Light.woff') format('woff');
 }
 
 @font-face {
@@ -13,7 +13,7 @@
 	font-weight: 400;
 	src: local('Roboto Regular'), 
 		 local('Roboto-Regular'), 
-		 url('fonts/Roboto-Regular.woff') format('woff');
+		 url('../font/Roboto-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -22,5 +22,5 @@
 	font-weight: 700;
 	src: local('Roboto Bold'), 
 		 local('Roboto-Bold'), 
-		 url('fonts/Roboto-Bold.woff') format('woff');
+		 url('../font/Roboto-Bold.woff') format('woff');
 }

@@ -1,3 +1,8 @@
+<?php
+	$assets = $this->theme->get("assets");
+	print_r($assets);
+?>
+
 					<h3>Hot Products</h3>
 					<div class="mainContent">
 						<ul class="thumbnails">

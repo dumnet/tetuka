@@ -52,7 +52,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array();
+$autoload['libraries'] = array('theme', 'database');
 
 
 /*
@@ -64,7 +64,7 @@ $autoload['libraries'] = array();
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('asset');
+$autoload['helper'] = array('asset', 'url', 'cookie');
 
 
 /*
@@ -115,8 +115,6 @@ $autoload['model'] = array();
 # Load the theme config
 $autoload['config'] = array('theme');
 
-# Load the theme spark
-$autoload['libraries'] = array('theme');
 
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */
