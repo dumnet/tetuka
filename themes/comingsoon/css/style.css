@@ -1,0 +1,135 @@
+/* Font
+-------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@font-face {
+	{
+	/*font-family: 'Infinity';
+	src:url('../fonts/Infinity.ttf') format('truetype');*/
+	font-weight: normal;
+	font-style: normal;
+	}
+}
+
+
+ 
+body {
+  position: relative;
+  padding-top: 40px;
+  background: #fff;
+  
+}
+
+
+h1,h2,p,body {
+
+  font-family: 'Ubuntu', sans-serif;
+  color: #d4d3d3;
+  font-size:15px;
+  font-weight: normal;
+  
+  } 
+
+
+.container-narrow {
+   margin: 0 auto;
+   max-width: 850px;
+}
+
+
+/* count-header
+-------------------------------------------------- */
+
+.count-header{
+   padding:10px;
+   margin: auto;
+   text-align:center;
+   color: #fff;
+   display: block;
+}
+.count-logo {
+   
+     margin: 10px 5px 2px 5px;
+	 display: block;
+ }
+
+/* count-box
+-------------------------------------------------- */
+
+.count-box{
+   padding: 120px 0 20px 0;
+  }
+
+.count-box h2{
+   margin: -90px 0 80px 0;
+ }
+
+.count-box-circle li {
+  text-align:center;
+  display: inline-block;
+  padding: 5px 4px;
+  line-height: 1;
+  *display: inline;
+  *zoom: 1; 
+}
+
+/* count-subscribe
+-------------------------------------------------- */
+
+.count-subscribe{
+  margin: auto;
+  padding: 10px 0 10px 0; 
+  background: transparent url(../images/pattern.png) repeat top left;
+   border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;	
+ 
+}
+.com-text{ 
+   padding-right: 230px;
+}
+
+.com-text h1 {
+  text-align:right;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #fff;
+  text-shadow: 0 1px 4px #000000;
+  font-family: 'Ubuntu', sans-serif;
+}
+.com-text p {
+  text-align:right;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 2;
+  letter-spacing: -1px;
+font-family: 'Ubuntu', cursive;
+}
+  
+ .count-form{ 
+  vertical-align: middle;
+  padding: 25px 2px;
+  }
+  
+/* count-address
+-------------------------------------------------- */
+
+.count-address{
+   margin: auto;
+   text-align:center;
+   padding: 25px 0 5px 0;
+ 
+  
+  }
+
+.count-address p{
+   font-size: 15px;
+   padding-right: 5px;
+   display: inline-block;   
+   font-weight: normal;
+   line-height: normal;
+  }
+.count-address img{
+   padding: 0 1px 0 2px;
+  }
