@@ -113,7 +113,8 @@
 				</ol>
 				<div class="carousel-inner">
 					<div class="item active">
-						<img data-src="holder.js/900x250/auto/#777:#7a7a7a/text:First slide" alt="First slide">
+						<!-- <img data-src="holder.js/900x250/auto/#777:#7a7a7a/text:First slide" alt="First slide"> -->
+						<img src="assets/img/banners1.jpg" alt="First slide">
 						<div class="container">
 							<div class="carousel-caption">
 								<h1>Example headline.</h1>
@@ -123,7 +124,8 @@
 						</div>
 					</div>
 					<div class="item">
-						<img data-src="holder.js/900x250/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">
+						<!-- <img data-src="holder.js/900x250/auto/#666:#6a6a6a/text:Second slide" alt="Second slide"> -->
+						<img src="assets/img/banners2.jpg" alt="First slide">
 						<div class="container">
 							<div class="carousel-caption">
 								<h1>Another example headline.</h1>
