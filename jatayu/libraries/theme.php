@@ -28,7 +28,7 @@ class Theme
     	//get the CI instance
     	$this->_ci = &get_instance();
 
-	//get the config
+	   //get the config
         $this->_config = config_item('theme');
 
         //set the theme

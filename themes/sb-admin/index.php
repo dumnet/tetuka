@@ -32,13 +32,13 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">SB Admin</a>
+					<a class="navbar-brand" href="<?php echo site_url(); ?>">Tetuka Panel</a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav side-nav">
-						<li class="active"><a href="index.html"><i class="icon-dashboard"></i> Dashboard</a></li>
+						<li class="active"><a href="<?php site_url('dashboard') ?>"><i class="icon-dashboard"></i> Dashboard</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-shopping-cart"></i> Sales <b class="caret"></b></a>
 							<ul class="dropdown-menu">
@@ -51,16 +51,16 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-table"></i> Catalogs <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="<?php echo site_url('/'); ?>">Categories</a></li>
-								<li><a href="<?php echo site_url('/'); ?>">Products</a></li>
+								<li><a href="<?php echo site_url('categories'); ?>">Categories</a></li>
+								<li><a href="<?php echo site_url('products'); ?>">Products</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-desktop"></i> Contents <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="<?php echo site_url('/'); ?>">Banners</a></li>
-								<li><a href="<?php echo site_url('/'); ?>">Pages</a></li>
-								<li><a href="<?php echo site_url('/'); ?>">Widgets</a></li>
+								<li><a href="<?php echo site_url('banners'); ?>">Banners</a></li>
+								<li><a href="<?php echo site_url('pages'); ?>">Pages</a></li>
+								<li><a href="<?php echo site_url('widgets'); ?>">Widgets</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">

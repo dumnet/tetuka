@@ -111,8 +111,10 @@ class Auth extends CI_Controller
 			$this->session->set_userdata('redir', current_url());
 			redirect('auth/login');
 		}
-		$this->theme->set('bitauth',$this->bitauth);
-		$this->theme->view('auth/users', array('bitauth' => $this->bitauth, 'users' => $this->bitauth->get_users()));
+		
+		/*$this->theme->set('bitauth',$this->bitauth);
+		$this->theme->view('auth/users', array('bitauth' => $this->bitauth, 'users' => $this->bitauth->get_users()));*/
+		redirect('dashboard');
 		
 	}
 
